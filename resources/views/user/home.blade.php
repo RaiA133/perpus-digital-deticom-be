@@ -11,24 +11,23 @@
 
             <div class="carousel-inner" role="listbox">
 
-                <div class="carousel-item active mt-2" style="background-image: url({{ asset('storage/home/hero1.jpg') }});">
+                <div class="carousel-item active" style="background-image: url({{ asset('storage/home/hero1.jpg') }});">
                     <div class="carousel-container">
                         <div class="container">
-                            <h2 class="animate__animated animate__fadeInDown">Selamat Datang <br> Perpustakaan Digital
-                            </h2>
-                            <a href="/login" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get
-                                Started</a>
+                            <h1 class="animate__animated animate__fadeInDown text-white">Selamat Datang <br> Perpustakaan Digital
+                            </h1>
+                            <a href="/login" class="btn-get-started scrollto animate__animated animate__fadeInUp mt-3 px-5 text-black">Get Started</a>
                         </div>
                     </div>
                 </div>
 
                 @foreach ($home as $hom)
                 {{-- {{ dd($hom->gambar) }} --}}
-                <div class="carousel-item mt-2" style="background-image: url({{ asset('storage/home/'.$hom->gambar) }});">
+                <div class="carousel-item" style="background-image: url({{ asset('storage/home/'.$hom->gambar) }});">
                     <div class="carousel-container">
                         <div class="container position-absolute top-50 start-50 translate-middle">
-                            <h2 class="animate__animated animate__fadeInDown">{{ $hom['judul'] }}</h2>
-                            <a href="/perpus" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
+                            <h1 class="animate__animated animate__fadeInDown text-white">{{ $hom['judul'] }}</h1>
+                            <a href="/perpus" class="btn-get-started scrollto animate__animated animate__fadeInUp mt-3 px-5 text-black">Get Started</a>
                         </div>
                     </div>
                 </div>

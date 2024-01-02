@@ -4,7 +4,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Team IT PMII Komisariat UNINUS</h1>
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Raie Aswajjilkah</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -38,13 +38,13 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="copyright">
-      &copy; Copyright <strong><span>PMII Komi Uninus</span></strong>. All Rights Reserved
+      &copy; Copyright <strong><span>MY PERPUSTAKAAN</span></strong>. All Rights Reserved
     </div>
     <div class="credits">
       <!-- All the links in the footer should remain intact. -->
       <!-- You can delete the links only if you purchased the pro version. -->
       <!-- Licensing information: https://bootstrapmade.com/license/ -->
       <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      Created by <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Team IT PMII Uninus</a>
+      Created by <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Raie Aswajjilkah</a>
     </div>
   </footer><!-- End Footer -->

@@ -1,39 +1,4 @@
 
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Team IT PMII Komisariat UNINUS</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Berdasarkan Surat Keputusan Nomor..... <br><hr>
-
-        Tim IT PMII Uninus adalah kelompok kader PMII Uninus yang terdiri dari para profesional 
-        berpengalaman, ahli TI, terampil dan berdedikasi dalam bidang teknologi informasi (TI). 
-        Kami bertugas menyediakan, mengelola, dan mendukung sistem kaderisasi digital di 
-        lingkungan PMII Komisariat Uninus. <br><br>
-
-        Tim IT PMII Uninus memiliki fokus pada kualitas, keandalan, dan keamanan dalam setiap tugas 
-        yang kami jalankan. Kami menyadari pentingnya infrastruktur TI yang stabil dan efisien 
-        dalam mendukung kegiatan kaderisasi di lingkungan PMII Uninus. <br><br>
-        
-        Komitmen kami adalah memberikan pelayanan yang ramah dan responsif kepada kader PMII Uninus. 
-        Kami siap membantu kader dalam menjalani pengalaman kaderisasi digital yang lancar, aman, dan 
-        bermanfaat di ruang lingkup PMII Komisariat Uninus. <br><br>
-        
-        Tim IT PMII Uninus juga mengutamakan pergerakan dan menyampaikan  <br>
-        
-        #salam_pergerakan
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-  <!-- ======= Modal End ======= -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -73,21 +38,13 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-newsletter">
-            <h4>Download Now</h4>
-            <p>Download dan install aplikasi PMII Uninus di Play Store</p>
-            <a href="https://play.google.com/store/apps">
-              <img style="width: 280px" src="{{ asset('storage/home/ps.png') }}" alt="logo playstore">
-            </a>
-          </div>
-
         </div>
       </div>
     </div>
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>PMII Komi UNINUS</strong>. All Rights Reserved
+        &copy; Copyright <strong>MY PERPUSTAKAAN</strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!--
@@ -96,7 +53,7 @@
         Licensing information: https://bootstrapmade.com/license/
         Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
       -->
-        Created by <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Team IT PMII Uninus</a>
+        Created by <a href="https://github.com/raia133" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Raie Aswajjilkah</a>
       </div>
     </div>
   </footer><!-- End Footer -->

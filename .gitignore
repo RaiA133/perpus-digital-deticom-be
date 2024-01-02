@@ -1,14 +1,27 @@
 /.phpunit.cache
 /bootstrap/ssr
 /node_modules
+
+/public/storage/img/*
+!public/storage/img/perpus_-1685020274.png
+!public/storage/img/perpus_-1685020510.png
+!public/storage/img/perpus_-1685192427.jpg
+!public/storage/img/perpus_-1685192467.jpg
+!public/storage/img/perpus_Analisis Sosial-1685132884.jpg
+!public/storage/img/perpus_Benturan NU - PKI-1685132485.jpg
+!public/storage/img/perpus_Filsafat Ilmu-1685133212.jpg
+
+
+!public/storage/home/
 /public/build
 /public/hot
-/public/storage
 /storage/*.key
 /vendor
+
 .env
 .env.backup
 .env.production
+
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
