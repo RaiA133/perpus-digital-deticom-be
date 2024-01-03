@@ -43,8 +43,7 @@
                             @if (in_array(auth()->user()->role_id, [1]))
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm
-                            ('Apakah Anda yakin ingin menghapus user ini?')">Hapus</button>
+                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus user ini?')">Hapus</button>
                         </form>
                     </td>
                       @endif

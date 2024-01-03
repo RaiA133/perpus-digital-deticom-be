@@ -8,6 +8,7 @@ use App\Models\Rayon;
 use Illuminate\Http\Request;
 use Laravolt\Indonesia\Models\Province;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\RedirectResponse;
 use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Support\Facades\Validator;
 
@@ -159,9 +160,11 @@ class UserController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(User $user)
+    public function destroy(int $id): RedirectResponse
     {
-        //
+        $user = User::findOrFail($id);
+        $user->delete();
+        return redirect('admin/user')->with('success', 'User Berhasil Di Delete!');
     }
 
     public function administrator(Request $request)
