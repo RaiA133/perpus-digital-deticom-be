@@ -165,7 +165,7 @@
                                           </tr>
                                         </tbody>
                                       </table><br>
-                                      PMII Uninus
+                                      MY PERPUS
                                   </td>
                                 </tr>
                               </tbody>

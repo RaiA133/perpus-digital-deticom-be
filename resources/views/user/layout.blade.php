@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>@yield('title') | PMII UNINUS </title>
+  <title>@yield('title') | MY PERPUS </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -90,28 +90,6 @@
   <body>
     <!-- Uncomment below i you want to use a preloader -->
     <div id="preloader"></div>
-
-
-
-
-    {{-- <section>
-      <div id="myModal" class="modal fade">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h5 class="modal-title text-center" >SENSUS ANGGOTA</h5>
-                </div>
-                <div class="modal-body">
-                  <p>Pastikan Anda Sudah Di Daftarkan Oleh Rayon Anda Sebagai Anggota Kader PMII UNINUS.</p>
-                  <img style="width: 100%" src="{{ asset('storage/img/sensus.png') }}" alt="">
-                  <a href="#"  target="_blank" class="btn btn-success mt-3 mb-2" 
-                  style="width: 100%">Pastikan Anda Sudah Di Daftarkan Oleh Rayon Anda Sebagai Anggota Kader PMII UNINUS.</a>
-              </div>
-            </div>
-        </div>
-    </div>
-    </section> --}}
-
 
 
 

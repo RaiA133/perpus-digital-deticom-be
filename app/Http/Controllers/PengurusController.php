@@ -39,7 +39,7 @@ class PengurusController extends Controller
         $penguruses['img'] = $newFileName;
     }
       $penguruses = Pengurus::create($penguruses);
-      Alert::success('Mantap Sahabat', 'Pengurus Berhasil Ditambahkan');
+      Alert::success('Mantap Pustakawan', 'Pengurus Berhasil Ditambahkan');
       return redirect('/admin/pengurus');
     }
     public function edit($id, Request $request)
@@ -61,14 +61,14 @@ class PengurusController extends Controller
     
       $pengurusToUpdate->update($pengurusData);
     
-      Alert::success('Mantap Sahabat', 'pengurus Berhasil Di Ubah');
+      Alert::success('Mantap Pustakawan', 'pengurus Berhasil Di Ubah');
       return redirect('/admin/pengurus');
     }
     public function destroy($id)
     {
         $pengurus = Pengurus::findOrFail($id);
         $pengurus->delete();
-        Alert::success('Mantap Sahabat', 'Pengurus Berhasil Dihapus');
+        Alert::success('Mantap Pustakawan', 'Pengurus Berhasil Dihapus');
         return redirect('/admin/pengurus/');
     }
 }

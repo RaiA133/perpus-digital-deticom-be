@@ -79,7 +79,7 @@ class PerpusController extends Controller
         }
         $perpus = Perpus::create($perpus);
 
-        Alert::success('Mantap Sahabat', 'File Berhasil Ditambahkan');
+        Alert::success('Mantap Pustakawan', 'File Berhasil Ditambahkan');
         return redirect('/admin/perpus');
     }
 
@@ -104,7 +104,7 @@ class PerpusController extends Controller
     
       $perpusToUpdate->update($perpusData);
     
-      Alert::success('Mantap Sahabat', 'Buku Berhasil Di Ubah');
+      Alert::success('Mantap Pustakawan', 'Buku Berhasil Di Ubah');
       return redirect('/admin/perpus');
     }
 

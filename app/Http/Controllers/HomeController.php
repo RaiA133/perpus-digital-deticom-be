@@ -156,7 +156,7 @@ class HomeController extends Controller
     
       $pagesToUpdate->update($pagesData);
     
-      Alert::success('Mantap Sahabat', 'Banner Berhasil Di Ubah');
+      Alert::success('Mantap Pustakawan', 'Banner Berhasil Di Ubah');
       return redirect('/admin/page');
     }
 }

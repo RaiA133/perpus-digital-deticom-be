@@ -43,7 +43,7 @@ class AgendaController extends Controller
         $events['pamflet'] = $newFileName;
     }
     $events = Agenda::create($events);
-    Alert::success('Mantap Sahabat', 'Agenda Berhasil Ditambahkan');
+    Alert::success('Mantap Pustakawan', 'Agenda Berhasil Ditambahkan');
     return redirect('/admin/calendar/');
   }
 
@@ -63,7 +63,7 @@ class AgendaController extends Controller
     
       $eventToUpdate->update($event);
     
-      Alert::success('Mantap Sahabat', 'Agenda Berhasil Di Ubah');
+      Alert::success('Mantap Pustakawan', 'Agenda Berhasil Di Ubah');
       return redirect('/admin/calendar/');
   }
   
@@ -71,7 +71,7 @@ class AgendaController extends Controller
   {
       $events = Agenda::findOrFail($id);
       $events->delete();
-      Alert::success('Mantap Sahabat', 'Agenda Berhasil Dihapus');
+      Alert::success('Mantap Pustakawan', 'Agenda Berhasil Dihapus');
       return redirect('/admin/calendar');
   }
 }

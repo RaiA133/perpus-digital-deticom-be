@@ -65,7 +65,7 @@ class GaleriController extends Controller
             $galeri['img'] = $newFileName;
         }
         $galeri = Galeri::create($galeri);
-        Alert::success('Mantap Sahabat', 'Gambar Berhasil Ditambahkan');
+        Alert::success('Mantap Pustakawan', 'Gambar Berhasil Ditambahkan');
         return redirect('/admin/galeri/');
     }
 
@@ -88,7 +88,7 @@ class GaleriController extends Controller
     {
         $galeri = Galeri::findOrFail($id);
         $galeri->delete();
-        Alert::success('Mantap Sahabat', 'Gambar Berhasil Dihapus');
+        Alert::success('Mantap Pustakawan', 'Gambar Berhasil Dihapus');
         return redirect('/admin/galeri/');
     }
 }

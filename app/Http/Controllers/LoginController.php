@@ -32,7 +32,7 @@ class LoginController extends Controller
 
         if (Auth::attempt($credentials)) {
             // Authentication passed...
-            Alert::success('Mantap Sahabat', 'Anda Berhasil Masuk');
+            Alert::success('Mantap Pustakawan', 'Anda Berhasil Masuk');
             return redirect()->intended('/profile');
         } else {
             // Authentication failed...
@@ -117,7 +117,7 @@ class LoginController extends Controller
     $user->password = bcrypt($request->password);
     $user->save();
 
-    Alert::success('Mantap Sahabat', 'Anda Berhasil Register');
+    Alert::success('Mantap Pustakawan', 'Anda Berhasil Register');
     return redirect()->to('/login');
 }
 

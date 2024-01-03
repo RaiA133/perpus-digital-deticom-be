@@ -33,7 +33,7 @@ class CommentsTableSeeder extends Seeder
                 'id' => 2,
                 'user_id' => '1',
                 'post_id' => '3',
-                'comment' => 'mantap sahabat',
+                'comment' => 'Mantap Pustakawan',
                 'created_at' => '2023-06-04 11:58:22',
                 'updated_at' => '2023-06-04 11:58:22',
             ),

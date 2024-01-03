@@ -39,7 +39,7 @@ class RayonController extends Controller
         $rayon = $request->all();
         $rayon = Rayon::create($rayon);
 
-        Alert::success('Mantap Sahabat', 'Rayon Berhasil Ditambahkan');
+        Alert::success('Mantap Pustakawan', 'Rayon Berhasil Ditambahkan');
         return redirect('/admin/rayon');
     }
 
@@ -90,7 +90,7 @@ class RayonController extends Controller
         $rayon->rayon = $request->rayon;
         $rayon->update();
 
-        Alert::success('Mantap Sahabat', 'Rayon Berhasil Diubah');
+        Alert::success('Mantap Pustakawan', 'Rayon Berhasil Diubah');
         return redirect('/admin/rayon');
     }
 
@@ -101,7 +101,7 @@ class RayonController extends Controller
     {
         $rayon = rayon::findOrFail($id);
         $rayon->delete();
-        Alert::success('Mantap Sahabat', 'Rayon Berhasil Dihapus');
+        Alert::success('Mantap Pustakawan', 'Rayon Berhasil Dihapus');
         return redirect('/admin/rayon');
     }
 }

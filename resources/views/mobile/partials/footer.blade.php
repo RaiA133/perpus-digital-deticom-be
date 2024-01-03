@@ -2,7 +2,7 @@
         <!-- app footer -->
         <div class="appFooter">
           <div class="footer-title">
-              Copyright © PMII Uninus 2023. All Rights Reserved.
+            Copyright <strong>MY PERPUSTAKAAN</strong>. All Rights Reserved
           </div>
           {{-- Bootstrap 5 based mobile template. --}}
       </div>

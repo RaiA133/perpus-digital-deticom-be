@@ -35,4 +35,7 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 9. `php artisan serve`
 10. Selesai
 
-#salam_pergerakan
+### Data User
+
+Admin
+- rai010303@gmail.com | Admin123123

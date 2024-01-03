@@ -105,7 +105,7 @@ class UserController extends Controller
 
       $request = User::create($request->all());
 
-  Alert::success('Mantap Sahabat', 'Kader Berhasil Ditambahkan');
+  Alert::success('Mantap Pustakawan', 'Kader Berhasil Ditambahkan');
   return redirect()->route('user.index');
   }
     /**
@@ -152,7 +152,7 @@ class UserController extends Controller
 
         $userToUpdate->update($userData);
 
-        Alert::success('Mantap Sahabat', 'User Berhasil Di Update');
+        Alert::success('Mantap Pustakawan', 'User Berhasil Di Update');
         return redirect('/admin');
     }
 

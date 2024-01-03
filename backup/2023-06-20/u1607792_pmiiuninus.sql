@@ -120,7 +120,7 @@ CREATE TABLE `comments` (
 
 INSERT INTO `comments` (`id`, `user_id`, `post_id`, `comment`, `created_at`, `updated_at`) VALUES
 (1, '11', '3', 'Kereen. Tumbuh subur pergerakan 🌹', '2023-06-01 17:08:24', '2023-06-01 17:08:24'),
-(2, '1', '3', 'mantap sahabat', '2023-06-04 04:58:22', '2023-06-04 04:58:22');
+(2, '1', '3', 'Mantap Pustakawan', '2023-06-04 04:58:22', '2023-06-04 04:58:22');
 
 -- --------------------------------------------------------
 

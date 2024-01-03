@@ -31,7 +31,7 @@ class QuotesController extends Controller
         $quotes['img'] = $newFileName;
     }
       $quotes = Quotes::create($quotes);
-      Alert::success('Mantap Sahabat', 'Quote Berhasil Ditambahkan');
+      Alert::success('Mantap Pustakawan', 'Quote Berhasil Ditambahkan');
       return redirect('/admin/quotes');
     }
     public function edit($id, Request $request)
@@ -53,14 +53,14 @@ class QuotesController extends Controller
     
       $quoteToUpdate->update($quoteData);
     
-      Alert::success('Mantap Sahabat', 'Quote Berhasil Di Ubah');
+      Alert::success('Mantap Pustakawan', 'Quote Berhasil Di Ubah');
       return redirect('/admin/quotes');
     }
     public function destroy($id)
     {
         $quotes = Quotes::findOrFail($id);
         $quotes->delete();
-        Alert::success('Mantap Sahabat', 'Quote Berhasil Dihapus');
+        Alert::success('Mantap Pustakawan', 'Quote Berhasil Dihapus');
         return redirect('/admin/quotes/');
     }
 }

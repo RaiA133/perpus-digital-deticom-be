@@ -1,9 +1,6 @@
 <?php
 
 // use App\Http\Controllers\ProfileController; profile dari inertia
-use App\Models\User;
-use Inertia\Inertia;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
 use App\Http\Controllers\HBNController;
@@ -56,21 +53,12 @@ Route::get('/emails', function () {
 // Route Frondend  =====================================
 // ----------------------------------------------------
 Route::get('/', [HomeController::class, 'index'])->name('index');
-Route::get('/post', [PostController::class, 'index'])->name('post.details');
-Route::get('/galeri', [GaleriController::class, 'index'])->name('index');
-Route::get('/pengurus', [PengurusController::class, 'show'])->name('show');
-Route::get('/contact', [ContactController::class, 'create'])->name('contact.create');
-Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
-Route::get('/article/{slug}', [PostController::class, 'show'])->name('post');
-Route::get('/article/nu/{slug}', [PostController::class, 'nushow'])->name('nushow');
-Route::get('/category/{slug}', [CategoryController::class, 'show'])->name('category');
-Route::get('/tag/{slug}', [TagController::class, 'show'])->name('tag');
-Route::get('/calendar', [AgendaController::class, 'index'])->name('calendar.index');
 Route::get('/profile/{slug}', [ProfileController::class, 'profile'])->name('profileuser');
 Route::get('/qrcode/varifikasi/kta/{id}/anjay/mabar/ckuahsksdfsihew/S3NAT-4NJ1NG-63lut-73ng/51-3nd1', [QrCodeController::class, 'index']);
 Route::get('/perpus', [PerpusController::class, 'index'])->name('index');
 Route::get('/perpus/details/{id}', [PerpusController::class, 'details'])->name('details');
 Route::get('/kta/user/download/pdf/{id}/my-kta/', [PDFController::class, 'kaderPDF']);
+
 
 // =====================================================
 // Route Auth  =========================================
@@ -144,6 +132,7 @@ Route::get('contoh-laravolt', [LaravoltController::class, 'index'])->name('larav
 Route::get('get-kota', [LaravoltController::class, 'get_kota'])->name('get.kota');
 Route::get('get-kecamatan', [LaravoltController::class, 'get_kecamatan'])->name('get.kecamatan');
 Route::get('get-kelurahan', [LaravoltController::class, 'get_kelurahan'])->name('get.kelurahan');
+
 // =====================================================
 // Route Admin dan Superadmin ==========================
 // -----------------------------------------------------
@@ -156,11 +145,6 @@ Route::middleware(['auth', 'role:1,2'])->group(function () {
   Route::put('/admin/perpus/{id}', [PerpusController::class, 'update'])->name('perpus.update');
   Route::delete('/admin/perpus/{id}', [PerpusController::class, 'destroy'])->name('perpus.destroy');
 
-  Route::get('/admin/galeri', [GaleriController::class, 'admin_index'])->name('admin_index');
-  Route::get('/admin/galeri/create', [GaleriController::class, 'admin_create'])->name('admin_create');
-  Route::post('/admin/galeri/store', [GaleriController::class, 'store'])->name('store');
-  Route::put('/admin/galeri/update{id}', [GaleriController::class, 'update'])->name('admin.galeri.update');
-  Route::delete('/admin/galeri/{id}', [GaleriController::class, 'admin_destroy'])->name('admin_destroy');
 
   Route::get('/admin/post/category', [admincategorycontroller::class, 'index'])->name('categories.index');
   Route::get('/admin/post/category/create', [admincategorycontroller::class, 'create'])->name('categories.create');
@@ -168,27 +152,6 @@ Route::middleware(['auth', 'role:1,2'])->group(function () {
   Route::get('/admin/post/category/{id}/edit', [admincategorycontroller::class, 'edit'])->name('categories.edit');
   Route::put('/admin/post/category/{id}', [admincategorycontroller::class, 'update'])->name('categories.update');
   Route::delete('/admin/post/category/{id}', [admincategorycontroller::class, 'destroy'])->name('categories.destroy');
-
-  Route::get('/admin/post/tag', [admintagcontroller::class, 'index'])->name('tags.index');
-  Route::get('/admin/post/tag/create', [admintagcontroller::class, 'create'])->name('create');
-  Route::post('/admin/post/tag/store', [admintagcontroller::class, 'store'])->name('store');
-  Route::get('/admin/post/tag/{id}/edit', [admintagcontroller::class, 'edit'])->name('tags.edit');
-  Route::put('/admin/post/tag/{id}', [admintagcontroller::class, 'update'])->name('tags.update');
-  Route::delete('/admin/post/tag/{id}', [admintagcontroller::class, 'destroy'])->name('tags.destroy');
-
-  Route::get('/admin/post', [adminpostcontroller::class, 'index'])->name('posts.index');
-  Route::get('/admin/post/create', [adminpostcontroller::class, 'create'])->name('posts.create');
-  Route::post('/admin/post/store', [adminpostcontroller::class, 'store'])->name('posts.store');
-  Route::get('/admin/post/{id}/edit', [adminpostcontroller::class, 'edit'])->name('posts.edit');
-  Route::put('/admin/post/{id}', [adminpostcontroller::class, 'update'])->name('posts.update');
-  Route::delete('/admin/post/{id}', [adminpostcontroller::class, 'destroy'])->name('posts.destroy');
-
-  Route::get('/admin/calendar', [AgendaController::class, 'list'])->name('calendar.list');
-  Route::get('/admin/calendar/create', [AgendaController::class, 'create'])->name('calendar.create');
-  Route::post('/admin/calendar/store', [AgendaController::class, 'store'])->name('store');
-  Route::get('/admin/calendar/{id}/edit', [AgendaController::class, 'edit'])->name('calendar.edit');
-  Route::put('/admin/calendar/{id}', [AgendaController::class, 'update'])->name('calendar.update');
-  Route::delete('/admin/calendar/destroy/{id}', [AgendaController::class, 'destroy'])->name('calendar.destroy');
 
   Route::get('/admin/user', [UserController::class, 'index'])->name('user.index');
   Route::get('/admin/user/create', [UserController::class, 'create'])->name('create.user');
@@ -203,17 +166,7 @@ Route::middleware(['auth', 'role:1,2'])->group(function () {
   Route::delete('/admin/user/{id}', [UserController::class, 'destroy'])->name('user.destroy');
   Route::get('/admin/user/rayon/{slug}', [UserController::class, 'list'])->name('user.rayon.list');
 
-  Route::get('/admin/rayon', [RayonController::class, 'index'])->name('rayon.index');
-  Route::get('/admin/rayon/{slug}', [RayonController::class, 'show'])->name('rayon.show');
-
   Route::get('/admin/administrator/', [UserController::class, 'administrator'])->name('administrator');
-  Route::get('/admin/kadermapaba/', [UserController::class, 'kadermapaba'])->name('kadermapaba');
-  Route::get('/admin/kaderpkd/', [UserController::class, 'kaderpkd'])->name('kaderpkd');
-  Route::get('/admin/kaderpkl/', [UserController::class, 'kaderpkl'])->name('kaderpkl');
-  Route::get('/admin/kaderpkn/', [UserController::class, 'kaderpkn'])->name('kaderpkn');
-  Route::get('/admin/unverification/', [UserController::class, 'unverification'])->name('unverification');
-  Route::get('/admin/bukankader/', [UserController::class, 'bukankader'])->name('bukankader');
-
   Route::get('/admin/categorybooks/', [CategoryBookController::class, 'index'])->name('categorybooks');
   Route::get('/admin/categorybooks/create', [CategoryBookController::class, 'create'])->name('create');
   Route::post('/admin/categorybooks/store', [CategoryBookController::class, 'store'])->name('store');
@@ -222,12 +175,6 @@ Route::middleware(['auth', 'role:1,2'])->group(function () {
   Route::put('/admin/categorybooks/{id}', [CategoryBookController::class, 'update'])->name('categorybooks.update');
   Route::delete('/admin/categorybooks/{id}', [CategoryBookController::class, 'destroy'])->name('categorybooks.destroy');
 
-  Route::get('/admin/hbn/', [HBNController::class, 'index'])->name('hbn.index');
-  Route::get('/admin/hbn/create', [HBNController::class, 'create'])->name('hbn.create');
-  Route::post('/admin/hbn/store', [HBNController::class, 'store'])->name('hbn.store');
-  Route::get('/admin/hbn/{id}/edit', [HBNController::class, 'edit'])->name('hbn.edit');
-  Route::put('/admin/hbn/{id}', [HBNController::class, 'update'])->name('hbn.update');
-  Route::delete('/admin/hbn/{id}', [HBNController::class, 'destroy'])->name('hbn.destroy');
 });
 // =====================================================
 // Route Super Admin only ==============================

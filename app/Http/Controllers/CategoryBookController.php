@@ -24,7 +24,7 @@ class CategoryBookController extends Controller
       $categoryData = $request->only('title', 'slug');
       $category = CategoryBook::create($categoryData);
   
-      Alert::success('Mantap Sahabat', 'Category Buku Berhasil Ditambahkan');
+      Alert::success('Mantap Pustakawan', 'Category Buku Berhasil Ditambahkan');
       return redirect('/admin/categorybooks');
   }
   
@@ -47,7 +47,7 @@ class CategoryBookController extends Controller
     $categorybookData = $request->all();  
     $categorybookToUpdate->update($categorybookData);
   
-    Alert::success('Mantap Sahabat', 'Category Buku Berhasil Di Ubah');
+    Alert::success('Mantap Pustakawan', 'Category Buku Berhasil Di Ubah');
     return redirect('/admin/categorybooks/');
   }
   public function destroy($id)
@@ -58,7 +58,7 @@ class CategoryBookController extends Controller
           return redirect('/admin/categorybooks')->with('error', 'Error! The category has entries.');
       }
       $categorybook->delete();
-      Alert::success('Mantap Sahabat', 'Category Buku Berhasil Dihapus');
+      Alert::success('Mantap Pustakawan', 'Category Buku Berhasil Dihapus');
       return redirect('/admin/categorybooks');
   }
 }

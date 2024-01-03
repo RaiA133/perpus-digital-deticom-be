@@ -23,14 +23,14 @@ class HBNController extends Controller
       $hbns = $request -> all();
       $hbns = HBN::create($hbns);
 
-      Alert::success('Mantap Sahabat', 'Hari Besar Berhasil Ditambahkan');
+      Alert::success('Mantap Pustakawan', 'Hari Besar Berhasil Ditambahkan');
       return redirect()->route('hbn.index');
     }
     public function destroy($id)
     {
         $quotes = HBN::findOrFail($id);
         $quotes->delete();
-        Alert::success('Mantap Sahabat', 'Hari Besar Berhasil Dihapus');
+        Alert::success('Mantap Pustakawan', 'Hari Besar Berhasil Dihapus');
         return redirect()->route('hbn.index');
     }
 }
