@@ -22,15 +22,6 @@ use App\Http\Controllers\StatistikController;
 use App\Http\Controllers\CategoryBookController;
 use App\Http\Controllers\ForgetPasswordControler;
 use App\Http\Controllers\Admin\Blog\CategoryController as admincategorycontroller;
-use App\Http\Controllers\HBNController; // delete
-use App\Http\Controllers\AgendaController; // delete
-use App\Http\Controllers\GaleriController; // delete
-use App\Http\Controllers\ContactController; // delete
-use App\Http\Controllers\Blog\TagController; // delete
-use App\Http\Controllers\Blog\PostController; // delete
-use App\Http\Controllers\Blog\CategoryController; // delete
-use App\Http\Controllers\Admin\Blog\TagController as admintagcontroller; // delete
-use App\Http\Controllers\Admin\Blog\PostController as adminpostcontroller; // delete
 
 /*
 |--------------------------------------------------------------------------
