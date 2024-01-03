@@ -127,7 +127,7 @@ Route::get('get-kelurahan', [LaravoltController::class, 'get_kelurahan'])->name(
 // Route Admin dan Superadmin ==========================
 // -----------------------------------------------------
 Route::middleware(['auth', 'role:1,2'])->group(function () {
-  Route::get('/admin', [StatistikController::class, 'index'])->name('dashboard');
+  // Route::get('/admin', [StatistikController::class, 'index'])->name('dashboard');
   Route::get('/admin/perpus', [PerpusController::class, 'admin_index'])->name('admin_index');
   Route::get('admin/perpus/create', [PerpusController::class, 'create'])->name('create');
   Route::post('/admin/perpus/store', [PerpusController::class, 'store'])->name('store');

@@ -160,10 +160,10 @@
             </div>
 
               <div class="mb-3">
-                <label for="rayon" class="form-label">Rayon</label>
+                <label for="rayon" class="form-label">Falkultas</label>
                 <div >
                   <select id="rayon_id" name="rayon_id" class="form-select" required onchange="showOptions()">
-                      <option disabled selected>== Pilih Rayon ==</option>
+                      <option disabled selected>== Pilih Falkultas ==</option>
                       <option value="1" >Teknik</option>
                       <option value="2" >Hukum</option>
                       <option value="3" >Ulul Albab</option>
@@ -212,7 +212,7 @@
                 </div>
               </div>
 
-              <div class="mb-3">
+              {{-- <div class="mb-3">
                 <label for="kaderisasi" class="form-label">Jenjang Kaderisasi Saat Ini</label>
                 <div >
                     <select id="kaderisasi" name="kaderisasi" class="form-select" onchange="showOptions()">
@@ -281,9 +281,8 @@
                     </select>
                 </div>
             </div>
-              {{-- jenjang kaderisasi end  --}}
 
-              <div class="mb-3">
+              {{-- <div class="mb-3">
                 <label for="informal" class="form-label">Kader Mengikuti Sekolah Informal</label>
                 <div >
                   <select name="informal" class="form-select" required aria-label="informal">
@@ -319,23 +318,23 @@
                     <option value="10">Lebih dari 9 Kali</option>
                 </select>
               </div>
-            </div>
+            </div> --}}
 
             <div class="mb-3">
-             <label for="wa" class="form-label">Telpone</label>
+             <label for="wa" class="form-label">No HP</label>
                <input type="text" name="wa" class="form-control" id="wa" >
-           </div>
+            </div>
 
               {{-- Role Start --}}
               <div class="my-3">
                 <label for="role_id" class="form-label">Status Keanggotaan</label><br>
                 <div >
                   <select id="role_id" name="role_id" class="form-select">
-                    @if (in_array(auth()->user()->role_id, [1]))
-                    <option value="1">Admin Uninus</option>
-                    <option value="2">Admin</option>
-                    @endif
                     <option value="3">Anggota</option>
+                    @if (in_array(auth()->user()->role_id, [1]))
+                    <option value="2">Admin</option>
+                    <option value="1">Admin Uninus</option>
+                    @endif
                   </select>
               </div>
             </div>

@@ -23,8 +23,8 @@
                     <h6 class="fw-normal mb-3 pb-3 text-center" style="letter-spacing: 1px;">Please Input New Password!</h6>
 
                     <div class="form-group" style="display: none">
-                      <input type="text" name="token" value="{{ request()->token }}">
-                      <input type="text" name="email" value="{{ request()->email }}">
+                      <input type="password" name="token" value="{{ request()->token }}">
+                      <input type="password" name="email" value="{{ request()->email }}">
                   </div>
 
                     <div class="form-group row mb-3">

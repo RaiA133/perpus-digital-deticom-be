@@ -21,9 +21,8 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 ### Cara Install
 
 1. Clone atau download source code
-    - Para terminal, clone repo `git clone ghttps://github.com/rifqimunawar/laracrot.git`
-    - atau `git clone https://github.com/rifqimunawar/laracrot.git`
-    - Jika tidak menggunakan Git, silakan **Download Zip** dan *extract* pada direktori web server (misal: xampp/htdocs)
+    - Para terminal, clone repo `git clone https://github.com/RaiA133/perpus-digital-deticom-be.git`
+    - Jika tidak menggunakan Git, silakan **Download Zip** dan *extract* pada local machine (PC) kalian
 2. `cd laracrot`
 3. `composer install`
 4. `cp .env.example .env`
