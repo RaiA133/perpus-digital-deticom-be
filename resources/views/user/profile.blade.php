@@ -3,7 +3,7 @@
 @section('content')
 <div class="container my-4" style="padding-top: 5rem">
   
-  <header class="pt-3 pb-5 bg-white">
+  <header class="py-5 px-3 bg-white">
     <div class="container d-flex align-items-center justify-content-between">
         <div class="d-flex align-items-center">
             <img src="{{ asset('storage/img/'. $profile->img) }}" alt="Profile Image" class="rounded-circle mr-4 profile-image-desktop" style="width: 125px; height: 125px; object-fit: cover;">
@@ -24,15 +24,14 @@
                   <a href="/kta/user/download/pdf/{{ $profile->id }}/my-kta/" class="btn btn-dark sm" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" >KTA</a>
                 </div>
                 <div class="d-flex align-items-center">
-                    <span class="mr-4"><strong>{{ $countpost }}</strong> posts</span>
-                    <span class="mr-4"><strong>{{ $countgaleri }}</strong> photos</span>
-                    <span><strong>{{ $countperpus }}</strong> library</span>
+                    <span class="mr-4"><strong>{{ $countperpus }}</strong> library</span>
                 </div>
                 <p class="mt-2">{{ $profile->bio }}</p>
             </div>
         </div>
     </div>
 </header>
+
 
 	<br>
 	<section class="galeri">
@@ -41,7 +40,7 @@
 				<ul class="list-inline">
 					<li><b><hr></b></li>
 					<li><b></b></li>
-					<li><b>{{ $countgaleri }}</b> Foto Terbaru</li>
+					<li><b>{{ $countperpus }}</b> Buku Terbaru</li>
 					<li><b></b>dari {{ $profile->username }}</li>
           <li><b><hr></b></li>
 				</ul>

@@ -67,9 +67,8 @@ class LoginController extends Controller
           return redirect()->route('register', ['user' => $user]);
         }
       } else {
-        Alert::error('Maaf Sahabat', 'NIM Anda belum terdaftar. 
-        Mohon minta admin Rayon untuk melakukan 
-        sensus terlebih dahulu, lalu registrasi kembali.');
+        Alert::error('Maaf Pustakawan', 'NIM Anda belum terdaftar. 
+        Mohon hubungi admin untuk mendaftarkan diri anda, lalu registrasi kembali.');
         return redirect()->route('login');
       }
     }

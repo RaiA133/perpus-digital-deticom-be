@@ -16,7 +16,7 @@
                         <div class="container">
                             <h1 class="animate__animated animate__fadeInDown text-white">Selamat Datang <br> Perpustakaan Digital
                             </h1>
-                            <a href="/login" class="btn-get-started scrollto animate__animated animate__fadeInUp mt-3 px-5 text-black">Get Started</a>
+                            <a href="/perpus" class="btn-get-started scrollto animate__animated animate__fadeInUp mt-3 px-5 text-black">Get Started</a>
                         </div>
                     </div>
                 </div>

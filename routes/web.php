@@ -1,37 +1,36 @@
 <?php
 
-// use App\Http\Controllers\ProfileController; profile dari inertia
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
-use App\Http\Controllers\HBNController;
-// use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Password;
+use Illuminate\Auth\Events\PasswordReset;
+
 use App\Http\Controllers\PDFController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
-use Illuminate\Support\Facades\Password;
 use App\Http\Controllers\KaderController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RayonController;
-use Illuminate\Auth\Events\PasswordReset;
-use App\Http\Controllers\AgendaController;
-use App\Http\Controllers\GaleriController;
 use App\Http\Controllers\PerpusController;
 use App\Http\Controllers\QrCodeController;
 use App\Http\Controllers\QuotesController;
 use App\Http\Controllers\CommentController;
-use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\Blog\TagController;
 use App\Http\Controllers\LaravoltController;
 use App\Http\Controllers\PengurusController;
-use App\Http\Controllers\Blog\PostController;
 use App\Http\Controllers\StatistikController;
 use App\Http\Controllers\CategoryBookController;
-use App\Http\Controllers\Blog\CategoryController;
 use App\Http\Controllers\ForgetPasswordControler;
-use App\Http\Controllers\Admin\Blog\TagController as admintagcontroller;
-use App\Http\Controllers\Admin\Blog\PostController as adminpostcontroller;
 use App\Http\Controllers\Admin\Blog\CategoryController as admincategorycontroller;
+use App\Http\Controllers\HBNController; // delete
+use App\Http\Controllers\AgendaController; // delete
+use App\Http\Controllers\GaleriController; // delete
+use App\Http\Controllers\ContactController; // delete
+use App\Http\Controllers\Blog\TagController; // delete
+use App\Http\Controllers\Blog\PostController; // delete
+use App\Http\Controllers\Blog\CategoryController; // delete
+use App\Http\Controllers\Admin\Blog\TagController as admintagcontroller; // delete
+use App\Http\Controllers\Admin\Blog\PostController as adminpostcontroller; // delete
 
 /*
 |--------------------------------------------------------------------------

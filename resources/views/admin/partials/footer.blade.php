@@ -9,22 +9,15 @@
       </div>
       <div class="modal-body">
         Berdasarkan Surat Keputusan Nomor..... <br><hr>
-
-        Tim IT PMII Uninus adalah kelompok kader PMII Uninus yang terdiri dari para profesional 
-        berpengalaman, ahli TI, terampil dan berdedikasi dalam bidang teknologi informasi (TI). 
-        Kami bertugas menyediakan, mengelola, dan mendukung sistem kaderisasi digital di 
-        lingkungan PMII Komisariat Uninus. <br><br>
-
-        Tim IT PMII Uninus memiliki fokus pada kualitas, keandalan, dan keamanan dalam setiap tugas 
-        yang kami jalankan. Kami menyadari pentingnya infrastruktur TI yang stabil dan efisien 
-        dalam mendukung kegiatan kaderisasi di lingkungan PMII Uninus. <br><br>
-        
-        Komitmen kami adalah memberikan pelayanan yang ramah dan responsif kepada kader PMII Uninus. 
-        Kami siap membantu kader dalam menjalani pengalaman kaderisasi digital yang lancar, aman, dan 
-        bermanfaat di ruang lingkup PMII Komisariat Uninus. <br><br>
-        
-        Tim IT PMII Uninus juga mengutamakan pergerakan dan menyampaikan  <br>
-        
+    
+        Tim IT My Perpus adalah kelompok anggota My Perpus yang terdiri dari individu-individu profesional, ahli TI, terampil, dan berdedikasi dalam bidang teknologi informasi (TI). Tugas utama kami adalah menyediakan, mengelola, dan mendukung sistem anggota digital di lingkungan My Perpus Komisariat Uninus. <br><br>
+    
+        Fokus utama Tim IT My Perpus adalah pada kualitas, keandalan, dan keamanan dalam setiap tugas yang kami jalankan. Kami sepenuhnya menyadari betapa pentingnya infrastruktur TI yang stabil dan efisien untuk mendukung kegiatan anggota di lingkungan My Perpus Komisariat Uninus. <br><br>
+    
+        Komitmen kami adalah memberikan pelayanan yang ramah dan responsif kepada anggota My Perpus. Kami siap membantu anggota dalam menjalani pengalaman anggota digital yang lancar, aman, dan bermanfaat di ruang lingkup My Perpus Komisariat Uninus. <br><br>
+    
+        Tim IT My Perpus juga mengutamakan pergerakan dan menyampaikan  <br>
+    
         #salam_pergerakan
       </div>
       <div class="modal-footer">

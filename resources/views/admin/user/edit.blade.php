@@ -143,7 +143,7 @@
                         @endif
                         <option value="3" {{ $user->role_id == '3' ? 'selected' : '' }}>Anggota MyPerpus</option>
                         <option value="4" {{ $user->role_id == '4' ? 'selected' : '' }}>Penjunjung</option>
-                        <option value="5" {{ $user->role_id == '5' ? 'selected' : '' }}>Bukan Kader PMII Uninus</option>
+                        <option value="5" {{ $user->role_id == '5' ? 'selected' : '' }}>Bukan Anggota</option>
                     </select>
                 </div>
         </div>

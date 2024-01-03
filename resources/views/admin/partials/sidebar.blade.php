@@ -3,11 +3,10 @@
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
-
         <li class="nav-item">
             <a class="nav-link collapsed" href="/">
                 <i class="bi bi-house-door"></i>
-                <span>Home</span>
+                <span>Keluar</span>
             </a>
         </li><!-- End Profile Page Nav -->
 

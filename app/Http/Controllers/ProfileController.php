@@ -106,7 +106,7 @@ class ProfileController extends Controller
     
         $user->save();
     
-        Alert::success('Mantap Pustakawan', 'Profile Anda Sudah Di Perbaharui');
+        Alert::success('Mantap Sahabat', 'Profile Anda Sudah Di Perbaharui');
         return redirect('/profile')->with('user', $user);
     }
     
@@ -148,13 +148,14 @@ class ProfileController extends Controller
       $user = Auth::user();
 
       if (!Hash::check($request->input('current_password'), $user->password)) {
+          Alert::error('Maaf Pustakawan', 'Current Password Salah');
           return redirect()->back()->withErrors(['current_password' => 'The provided password does not match your current password.']);
       }
 
       $user->password = Hash::make($request->input('new_password'));
       $user->save();
 
-      return redirect()->back()->with('Mantap Pustakawan', 'Password Berhasil Diubah.');
+      return redirect()->back()->with('Mantap Sahabat', 'Password Berhasil Diubah.');
   }
 
     public function store(Request $request)
@@ -181,7 +182,7 @@ class ProfileController extends Controller
     
         $galeri->save();
     
-        Alert::success('Mantap Pustakawan', 'Gambar Berhasil Ditambahkan');
+        Alert::success('Mantap Sahabat', 'Gambar Berhasil Ditambahkan');
         return redirect('/profile')->with('success', 'Gambar Berhasil Ditambahkan');
     }
     
@@ -203,7 +204,7 @@ class ProfileController extends Controller
         $post = Post::create($data);
         $post->tags()->sync($request->tags);
 
-        Alert::success('Mantap Pustakawan', 'Postingan akan ditinjau terlebih dahulu oleh admin');
+        Alert::success('Mantap Sahabat', 'Postingan akan ditinjau terlebih dahulu oleh admin');
 
         return redirect('/profile');
     }
@@ -230,7 +231,7 @@ class ProfileController extends Controller
     // dd($perpus);
 
 
-        Alert::success('Mantap Pustakawan', 'File Berhasil Ditambahkan');
+        Alert::success('Mantap Sahabat', 'File Berhasil Ditambahkan');
         return redirect('/profile');
     }
 

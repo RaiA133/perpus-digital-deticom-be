@@ -1,4 +1,4 @@
-@section('title') {{ 'Perpus' }}@endsection
+@section('title') {{ 'Perpus', 'allcategorybooks' }}@endsection
 @extends('/user/layout')
 @section('content')
 <div class="text-center my-5 pt-3">
@@ -10,12 +10,22 @@
             <form action="" method="get">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" name="search" placeholder="Search.....">
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Category
+                      </button>
+                      <ul class="dropdown-menu">
+                        @foreach ($allcategorybooks as $category)
+                          <li><a class="dropdown-item" href="?category={{ $category->id }}">{{ $category->title }}</a></li>
+                        @endforeach
+                      </ul>
+                    </div>
                     <button class="btn btn-primary">Search</button>
                 </div>
             </form>
         </div>
 
-        <div class="row gap-3" style="margin-left:0">
+        <div class="row gap-3 mb-3 flex justify-content-center" style="margin-left:0">
           @foreach ($perpus as $perp)
             <div class="card" style="width: 18rem;">
                 <img src="{{ asset('storage/img/'.$perp['image']) }}" class="card-img-top" alt="...">
@@ -23,8 +33,9 @@
                     <h5 class="card-title">{{ Str::limit($perp->judul, 15) }}</h5>
                     <p class="card-text">
                       <b>Category : {{ $perp->categorybooks->title }}</b>
+                      <br>
                       {{ $perp->deskripsi }}
-                    </p>
+                    </p> 
                     <a href="/perpus/details/{{ $perp->id }}" class="btn btn-primary">Detail</a>
                 </div>
             </div>

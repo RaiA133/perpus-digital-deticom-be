@@ -4,7 +4,7 @@
 
 <div class="card info-card sales-card">
     <div class="container my-3">
-        <h2 class="my-5 card-title">Data Pengguna Bukan Kader PMII Uninus</h2>
+        <h2 class="my-5 card-title">Data Pengguna Bukan Anggota</h2>
 
         
         <div class="card-body">
@@ -15,7 +15,7 @@
               <td class="text-center">Nama</td>
               <td class="text-start"> Username:</td>
               <td class="text-center">Nim</td>
-              <td class="text-center">Rayon</td>
+              <td class="text-center">Fakultas</td>
               <td class="text-center">Profile</td>
               <td class="text-center"> Aksi</td>
               <td class="text-center">  </td>

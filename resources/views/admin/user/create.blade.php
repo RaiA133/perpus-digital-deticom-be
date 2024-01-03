@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>User | PMII UNINUS</title>
+    <title>User | MY PERPUS</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -20,10 +20,9 @@
       <div class="container">
   
         <div class="text-center pt-5 mt-5">
-          <h4>Tambah Kader</h4>
+          <h4>Tambah User</h4>
         </div>
         <div class="row pt-4 mt-5">
-          <div class="col-md-6">
   
             <form action="{{ route('store.user') }}" method="post" enctype="multipart/form-data" >
               @csrf 
@@ -333,34 +332,22 @@
                 <div >
                   <select id="role_id" name="role_id" class="form-select">
                     @if (in_array(auth()->user()->role_id, [1]))
-                    <option value="1">Admin Komisariat</option>
-                    <option value="2">Admin Rayon</option>
+                    <option value="1">Admin Uninus</option>
+                    <option value="2">Admin</option>
                     @endif
-                    <option value="3">Kader PMII Uninus</option>
-                    {{-- <option value="4" >Pengjunjung</option>
-                    <option value="5" >Bukan Kader PMII Uninus</option> --}}
+                    <option value="3">Anggota</option>
                   </select>
               </div>
             </div>
             {{-- Role end  --}}
 
-
-
-              <div class="pt-3 text-end">
+              <div class="py-3 text-end">
                 <a href="/admin/user" class="btn btn-warning btn-sm">Kembali</a>
                 <button type="submit" class="btn btn-success btn-sm" >Simpan</button>
               </div>
   
             </form>
   
-          </div>
-          
-          {{-- <div class="col-md-6">
-            <div class="text-center">
-              <img src="{{ asset('storage/img/' . $user->img ) }}" class="rounded" alt="..." 
-              style="width: 80%; border-radius:20px;box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.3)">
-            </div>
-          </div> --}}
       </div>
   
   </div>
